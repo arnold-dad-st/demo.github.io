@@ -1,4 +1,3 @@
-
 function createInfoList(info) {
   const ul = document.createElement('ul');
 
@@ -14,11 +13,8 @@ function createInfoList(info) {
   document.body.appendChild(ul)
 }
 
-
-const userInfo = {
+createInfoList({
   language: navigator.language,
   name: navigator.userAgent
-}
-
-createInfoList(userInfo);
+});
 
